@@ -11,7 +11,7 @@ public class HelloController {
 
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping("/", method = GET)
 	public String welcome(Model model) {
 		logger.info("Processing index request");
 		model.addAttribute("course", "DevOps");
